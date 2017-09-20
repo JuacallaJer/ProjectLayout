@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juacallacastillo.projectlayout.Academic">
+
+    <ImageView
+        android:background="@drawable/bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/home"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnalb"
+        android:layout_toStartOf="@+id/btnalb" />
+
+    <ImageView
+        android:id="@+id/albert"
+        android:layout_width="250dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/albertus"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_toLeftOf="@+id/btnbeat"
+        android:layout_toStartOf="@+id/btnbeat" />
+
+    <ImageView
+        android:id="@+id/amv"
+        android:layout_width="220dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/amv"
+        android:layout_below="@+id/albert"
+        android:layout_toLeftOf="@+id/btnalb"
+        android:layout_toStartOf="@+id/btnalb" />
+
+    <ImageView
+        android:id="@+id/beat"
+        android:layout_width="250dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/beato"
+        android:layout_below="@+id/amv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnalb"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/albert"
+        android:layout_marginTop="33dp"
+        android:layout_toEndOf="@+id/btnnext"
+        android:layout_toRightOf="@+id/btnnext"
+        android:background="#000"
+        android:onClick="openAlbertus"
+        android:text="Albertus Magnus"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnamv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:background="#000"
+        android:onClick="openAMV"
+        android:text="AMV"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/albert"
+        android:layout_toRightOf="@+id/beat"
+        android:layout_toEndOf="@+id/beat"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:id="@+id/btnbeat"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnalb"
+        android:layout_alignRight="@+id/btnalb"
+        android:layout_below="@+id/amv"
+        android:layout_marginTop="40dp"
+        android:background="#000"
+        android:onClick="openBeato"
+        android:text="Beato Angelico"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:onClick="openNext"
+        android:text="Next"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

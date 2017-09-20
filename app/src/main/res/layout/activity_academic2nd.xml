@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juacallacastillo.projectlayout.Academic2nd">
+
+    <ImageView
+        android:background="@drawable/bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/home"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/albert"
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/benavides"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/amv"
+        android:layout_width="270dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/bgpop"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/albert"
+        android:layout_toLeftOf="@+id/btnNext2"
+        android:layout_toStartOf="@+id/btnNext2" />
+
+    <ImageView
+        android:id="@+id/beat"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/main"
+        android:layout_below="@+id/amv"
+        android:layout_toLeftOf="@+id/btnben"
+        android:layout_toStartOf="@+id/btnben"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/btnbg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="BGPOP"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:layout_alignTop="@+id/amv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:id="@+id/btnprev"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#000"
+        android:onClick="openPrev"
+        android:text="Prev"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnben"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#000"
+        android:text="Benavides Bldg."
+        android:textColor="@android:color/background_light"
+        android:layout_alignTop="@+id/albert"
+        android:layout_alignRight="@+id/btnbg"
+        android:layout_alignEnd="@+id/btnbg" />
+
+    <Button
+        android:id="@+id/btnmain"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnben"
+        android:layout_alignRight="@+id/btnben"
+        android:layout_alignTop="@+id/beat"
+        android:layout_marginTop="39dp"
+        android:background="#000"
+        android:text="Main Bldg."
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnNext2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="#000"
+        android:onClick="openNext2"
+        android:text="Next"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnprev"
+        android:layout_toEndOf="@+id/btnprev" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juacallacastillo.projectlayout.Medical">
+
+    <ImageView
+        android:background="@drawable/bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/home"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+
+        android:id="@+id/imageView7"
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:background="@drawable/healthservice"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/btnhs"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#000"
+        android:onClick="openhs"
+        android:text="Health Service"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+
+        android:id="@+id/imageView8"
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:background="@drawable/hospital"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/btnhs"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/btnhos"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_alignLeft="@+id/btnhs"
+        android:layout_alignStart="@+id/btnhs"
+        android:layout_marginBottom="45dp"
+        android:background="#000"
+        android:onClick="openhos"
+        android:text="UST Hospital"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnbck3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="#000"
+        android:onClick="openbck3"
+        android:text="Back to Tour"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juacallacastillo.projectlayout.CampusTour">
+
+    <ImageView
+        android:background="@drawable/bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:src="@drawable/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnAcad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnAdmin"
+        android:layout_alignLeft="@+id/btnAdmin"
+        android:layout_alignRight="@+id/btnAdmin"
+        android:layout_alignStart="@+id/btnAdmin"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="31dp"
+        android:background="#000"
+        android:onClick="openAcads"
+        android:text="Academic Buildings"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAcad"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:onClick="openAds"
+        android:text="Administrative Buildings"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnlib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdmin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:onClick="openlib"
+        android:text="Library"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlib"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:onClick="openmed"
+        android:text="Medical Facilities"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnrel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnmed"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:onClick="openrel"
+        android:text="Religious Facilities"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnrel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:onClick="openres"
+        android:text="Research Facilities"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnsports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnres"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:onClick="opensports"
+        android:text="Sport Facilities"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juacallacastillo.projectlayout.Albertus">
+
+
+
+        <ImageView
+            android:background="@drawable/bg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/home"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/albert"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/albertus"
+        android:layout_marginTop="103dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_toLeftOf="@+id/imageView12"
+        android:layout_toStartOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/albert"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:text="Named after the Dominican Albertus Magnus, the building houses the College of Education, the Conservatory of Music, and the Education High School."
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/map"
+        android:layout_alignTop="@+id/albert"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/bck7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:onClick="back2u"
+        android:text="Back"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView12"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="19dp"
+        android:text="Albertus Magnus"
+        android:textColor="#000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Architect: Manuel Francisco"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+</RelativeLayout>
